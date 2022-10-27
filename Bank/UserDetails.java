@@ -3,7 +3,7 @@ public class UserDetails {
     private String number;
     private String password;
     private String account;
-    private String balance;
+    private int balance;
 
     public String getName() {
         return name;
@@ -29,10 +29,10 @@ public class UserDetails {
     public void setAccount(String account) {
         this.account = account;
     }
-    public String getBalance() {
+    public int getBalance() {
         return balance;
     }
-    public void setBalance(String balance) {
+    public void setBalance(int balance) {
         this.balance = balance;
     }
     public String toString(){

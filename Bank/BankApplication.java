@@ -1,3 +1,4 @@
+import java.sql.SQLException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -5,7 +6,7 @@ class BankApplication {
 
     Scanner input = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
 
         BankApplication bankingApplication = new BankApplication();
         bankingApplication.welcomePage();
@@ -20,7 +21,7 @@ class BankApplication {
         System.out.println("3) EXIT");
     }
 
-    public void userChoice() {
+    public void userChoice() throws SQLException {
 
         System.out.println("Enter one of the option");
         Byte option = 0;
